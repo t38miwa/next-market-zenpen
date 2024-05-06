@@ -3,13 +3,21 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
 const ItemSchema = new Schema({
-    Image: String,
+    title: String, 
+    image: String,
+    price: String,
+    description: String,
+    email: String,
+})
+
+{/*
+Image: String,
     FavorTeam: String,       
     FavorPlayer: String,
     prefecture: String,  
     description: String,
     email: String,    
-})
+*/}
 
 const UserSchema = new Schema({
     name: {
